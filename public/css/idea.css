@@ -1,0 +1,44 @@
+
+header {
+    background-color: #005355;
+    height: fit-content; 
+    
+}
+ul{
+    padding: 0;
+}
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.back-button:hover {
+    color: lightgray;
+}
+
+.header-container {
+    padding: 0 20px;
+}
+
+
+.cards {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+}
+
+
+section img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain; /* Ensures images fit within their container */
+    margin-bottom: 5px;
+}
