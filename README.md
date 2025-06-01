@@ -24,3 +24,18 @@ Follow these steps to run the project on your local machine:
 
 ```bash
 git clone https://github.com/Shahad-jawabreh/electronics_shop.git
+
+2. Navigate into the project folder:
+```bash
+cd electronics_shop
+
+3. Install dependencies via Composer:
+```bash
+composer install
+
+4. Start the development server:
+
+```bash
+php artisan serve
+
+
