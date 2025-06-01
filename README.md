@@ -10,31 +10,22 @@ Additionally, since choosing a project idea is often challenging for students, t
 
 ---
 
-## Live Demo
-
-https://electronics-shop-tzb2.onrender.com/
-
----
 
 ## How to Run Locally
 
 Follow these steps to run the project on your local machine:
 
 1. Clone the repository:
-
-```bash
 git clone https://github.com/Shahad-jawabreh/electronics_shop.git
 
 2. Navigate into the project folder:
-```bash
 cd electronics_shop
 
 3. Install dependencies via Composer:
-```bash
 composer install
 
-4. Start the development server:
-
+5. Start the development server:
+ 
 ```bash
 php artisan serve
 
