@@ -75,7 +75,7 @@
         <div class="card-body d-flex  flex-column fs-5">
           <h3  class="card-title fw-bold text-color"> تحليل الذكاء الاصطناعي</h3>
           <p class="card-text">أدخل فكرة مشروعك وسيتولى نظامنا الذكي تحليلها واقتراح القطع الإلكترونية المناسبة لك</p>
-          <a href="/chatGPT.html" target="_blank" class="btn btn-primary bg-color fw-bold">المزيد</a>
+          <a href="{{ route('electronics.analysis') }}"  class="btn btn-primary bg-color fw-bold">المزيد</a>
         </div>
       </div>
       <div class="col-lg-3 col-md-5 card" >
@@ -83,7 +83,7 @@
         <div class="card-body  d-flex  flex-column fs-5">
           <h3  class="card-title fw-bold text-color"> مشاريع وأفكار جاهزة</h3>
           <p class="card-text">مجموعة متنوعة من المشاريع الإلكترونية مع الأكواد والشرح التفصيلي.</p>
-          <a href="./projectIdea.html" target="_blank" class="btn btn-primary bg-color fw-bold">المزيد</a>
+          <a href="{{ route('electronics.idea') }}" class="btn btn-primary bg-color fw-bold">المزيد</a>
         </div>
       </div>
       <div class="col-lg-3 col-md-5 card" >
@@ -91,7 +91,7 @@
         <div class="card-body d-flex  flex-column fs-5">
           <h3  class="card-title  fw-bold text-color"> بيع وإدارة المنتجات</h3>
           <p class="card-text">أضف قطعك الإلكترونية التي ترغب في بيعها، وقم بتعديلها أو تحديثها بسهولة في أي وقت</p>
-          <a href="./addproduct.html" target="_blank" class="btn btn-primary bg-color fw-bold">المزيد</a>
+          <a href="{{ route('electronics.create') }}" class="btn btn-primary bg-color fw-bold">المزيد</a>
         </div>
       </div>
     </div>

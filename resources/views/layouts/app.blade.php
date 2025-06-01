@@ -81,7 +81,7 @@
             <a class="nav-link px-3" href="{{route('electronics.analysis')}}">تحليل مشروعك</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-3" href="{{ route('electronics.index') }}#contact">تواصل معنا</a>
+            <a class="nav-link px-3" href="{{ route('welcome') }}#contact">تواصل معنا</a>
           </li>
 
 

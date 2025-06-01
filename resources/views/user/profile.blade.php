@@ -92,7 +92,7 @@ footer {
         <img src="{{ asset('image/user.png') }}" alt="صورة المالك" />
         <h2 id="owner-name">{{$user->name}}</h2>
         <p>
-            <a href="mailto:shahadjawabreh3@gmail.com" id="owner-email"
+            <a href="mailto:{{ $user->email }}" id="owner-email"
             >{{$user->email}}</a
           >
           
@@ -103,19 +103,6 @@ footer {
           <strong>الموقع:</strong>
           <span id="owner-location"> {{ $user->address }}  </span>
         </p>
-      </div>
-
-      <h2>مشاريع هذا المالك</h2>
-      <div class="projects">
-        
-        <div class="project-card">
-        
-            <h3>Nail Polish Robot</h3>
-            <p>نظام آلي لتلميع الأظافر باستخدام  image processing.</p>
-            
-            <a target="_blank" href="https://drive.google.com/file/d/1tmtt_8pP8OzTSQr1iYUx-u9HAV01Mm5F/view?usp=sharing">عرض المشروع</a>
-            <a target="_blank" href="https://github.com/Shahad-jawabreh/Nail-polish-Robot1">الكود والتقرير</a>
-        </div>
       </div>
     </section>
     @endsection

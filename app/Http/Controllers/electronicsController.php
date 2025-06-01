@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\User;
+use Illuminate\Support\Facades\Http;
 class electronicsController extends Controller
 {
     public function welcome()
@@ -22,6 +23,29 @@ class electronicsController extends Controller
     public function analysis()
     {
         return view('electronics.analysis');
+    }
+    public function analyze(Request $request)
+    {
+        $projectIdea = $request->input('projectIdea');
+
+        $requestBody = [
+            [
+                'content' => "حلل فكرة المشروع التالية وحدد مستوى الصعوبة، القطع المطلوبة، وأي ملاحظات تقنية مفيدة: $projectIdea",
+            ]
+        ];
+
+        try {
+            $response = Http::withHeaders([
+                'Content-Type' => 'application/json',
+                'X-RapidAPI-Key' => 'e8948516a6msh53bc343e189f9cbp1d6f54jsn150b0eb09380',
+                'X-RapidAPI-Host' => 'chatgpt-api8.p.rapidapi.com',
+            ])->post('https://chatgpt-api8.p.rapidapi.com/', $requestBody);
+
+            return response()->json($response->json());
+
+        } catch (\Exception $e) {
+            return response()->json(['error' => 'Internal Server Error'], 500);
+        }
     }
     public function create()
     {
